@@ -3,6 +3,7 @@ import datetime
 import sys
 
 import redis
+import fakeredis
 from django.conf import settings
 from rest_framework.schemas.generators import EndpointEnumerator
 
