@@ -8,7 +8,7 @@ authors = ["Kirill Skvoter <r00t@skvoter.xyz>"]
 python = "^3.7"
 django = "^2.2"
 redis = "^3.5.3"
-djangorestframework = "^3.12.1"
+djangorestframework = "3.10.3"
 fakeredis = "^1.4.3"
 
 [tool.poetry.dev-dependencies]
