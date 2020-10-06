@@ -5,8 +5,8 @@ description = ""
 authors = ["Kirill Skvoter <r00t@skvoter.xyz>"]
 
 [tool.poetry.dependencies]
-python = "^3.8"
-django = "2.2"
+python = "^3.7"
+django = "^2.2"
 redis = "^3.5.3"
 djangorestframework = "^3.12.1"
 fakeredis = "^1.4.3"
