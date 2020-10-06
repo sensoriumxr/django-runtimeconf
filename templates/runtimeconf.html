@@ -1,0 +1,59 @@
+{% extends "admin/base_site.html" %}
+{% block content %}
+<script src='https://code.jquery.com/jquery-3.5.1.min.js'></script>
+<form id="post-form" action='' method="POST">
+{% csrf_token %}
+{{ settings.non_field_errors }}
+    <a
+    href="javascript: void 0"
+    onclick="this.nextElementSibling.style.display = ''; this.style.display = 'none'"
+    >Show endpoints +</a>
+    <table style='display: none;'>
+        {% for field in settings.get_endpoints %}
+    {{ field.errors}}
+    <tr>
+        <td style="padding-right: 100px;">{{ field.label }}</td>
+        <td> {{ field }}</td>
+    </tr>  
+    {% endfor %}
+    </table>
+<table>
+{% for field in settings.get_interest_fields %}
+    {{ field.errors}}
+    <tr>
+        <td style="padding-right: 100px;">{{ field.label }}</td>
+        <td> {{ field }}</td>
+    </tr>
+        
+{% endfor %}
+<div >
+    <p class='keys-list-new'>
+        <tr>
+            <td>
+                New flag
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" placeholder="key" name='newkey_key'/>
+            </td>            
+            <td>
+                <input type="text" placeholder="value" name='newkey_value'/>   
+            </td>
+        </tr>
+        
+    </p>
+</div>
+</table>
+<input value='Submit' type="submit"/>
+</form>
+<form method="POST" action='delete'>
+    {% csrf_token %}
+    {{ delete }}
+    <input type="submit" value="Delete"/>
+</form>
+<script>
+   
+</script>
+{% endblock %}

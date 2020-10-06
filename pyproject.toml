@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "django-redis-runtimeconf"
+version = "0.1.0"
+description = ""
+authors = ["Kirill Skvoter <r00t@skvoter.xyz>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+django = "2.2"
+redis = "^3.5.3"
+djangorestframework = "^3.12.1"
+fakeredis = "^1.4.3"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
