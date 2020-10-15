@@ -32,7 +32,7 @@ class config(object):
         abstract = False
         managed = False
         verbose_name_plural = 'configs'
-        app_label = 'runtimeconf'
+        app_label = 'django_redis_runtimeconf'
 
         @property
         def app_config(self):
@@ -46,7 +46,7 @@ class CustomModelAdmin(admin.ModelAdmin):
 
     def get_urls(self):
         my_urls = [
-            path('', self.admin_site.admin_view(self.redisconf_view), name='runtimeconf_config_changelist'),
+            path('', self.admin_site.admin_view(self.redisconf_view), name='django_redis_runtimeconf_config_changelist'),
             path('delete', self.admin_site.admin_view(self.redisconf_delete_key))
         ]
         return my_urls
