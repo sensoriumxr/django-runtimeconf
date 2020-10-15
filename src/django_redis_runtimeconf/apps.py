@@ -2,4 +2,4 @@ from django.apps import AppConfig
 
 
 class RuntimeconfConfig(AppConfig):
-    name = 'runtimeconf'
+    name = 'django_redis_runtimeconf'
