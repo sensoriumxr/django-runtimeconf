@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "django-redis-runtimeconf"
-version = "0.1.0"
+version = "0.1.1"
 description = ""
 authors = ["Kirill Skvoter <r00t@skvoter.xyz>"]
 
