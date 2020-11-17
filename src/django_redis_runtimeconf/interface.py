@@ -80,7 +80,7 @@ class RuntimeConfClient(object):
                     str('{}|{}'.format(
                         endpoint_name,
                         endpoint[1]
-                    )), False)
+                    )), True)
 
 
 class TestRuntimeConfClient(RuntimeConfClient):
