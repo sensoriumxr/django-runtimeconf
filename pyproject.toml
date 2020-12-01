@@ -1,15 +1,15 @@
 [tool.poetry]
 name = "django-redis-runtimeconf"
-version = "0.1.3"
+version = "0.1.4"
 description = ""
 authors = ["Kirill Skvoter <r00t@skvoter.xyz>"]
 
 [tool.poetry.dependencies]
-python = "^3.7"
-django = "^2.2"
+python = "^3.9"
 redis = "^3.5.3"
 djangorestframework = "^3.10"
 fakeredis = "^1.4.3"
+django = "^3.1.4"
 
 [tool.poetry.dev-dependencies]
 
